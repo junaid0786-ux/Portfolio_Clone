@@ -10,3 +10,44 @@
 .text-shadow-lg {
   text-shadow: 5px 5px 10px black;
 }
+
+
+/* Base fade animations */
+.fade-in,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Fade-up (default) */
+.fade-in {
+  transform: translateY(40px);
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade from left */
+.fade-left {
+  transform: translateX(-40px);
+}
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade from right */
+.fade-right {
+  transform: translateX(40px);
+}
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+p{
+  color:rgb(180, 180, 180);
+}
