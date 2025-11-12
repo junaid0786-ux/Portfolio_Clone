@@ -44,7 +44,10 @@
       </nav>
 
       <!-- Hero Section -->
-      <section id="Home" class="w-full h-screen flex justify-between pl-20 pr-20 pt-10">
+      <section
+        id="Home"
+        class="w-full h-screen flex justify-between pl-20 pr-20 pt-10"
+      >
         <div class="w-full h-full flex gap-20">
           <div
             class="fade-left bg-white w-[50%] h-full flex flex-col justify-center"
@@ -88,7 +91,7 @@
       </section>
 
       <!-- Clients -->
-      <section class="fade-in section2 w-full h-auto p-6  flex flex-col">
+      <section class="fade-in section2 w-full h-auto p-6 flex flex-col">
         <div>
           <div class="w-full flex items-center justify-center">
             <h1 class="text-black/80 font-bold">My awesome clients</h1>
@@ -802,7 +805,7 @@
       </section>
 
       <!-- popular clients -->
-      <section class="w-full h-screen flex justify-center">
+      <section class="w-full h-auto flex justify-center">
         <div class="w-[80%] h-full flex flex-col gap-6 p-20">
           <div class="w-full font-bold flex justify-center">
             <p>POPULAR CLIENTS</p>
@@ -836,6 +839,127 @@
               <img src="./assets/logo-spotify.svg" alt="" class="grayscale" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-gray-200 w-full min-h-screen bg-gray-50 flex flex-col items-center justify-center"
+      >
+        <div class="text-center mb-10">
+          <h1 class="text-4xl font-semibold text-gray-800">Contact Us</h1>
+          <p class="text-gray-500 mt-3 max-w-2xl">
+            Ready to get started? Feel free to reach out through the contact
+            form, and let's embark on a journey of innovation and success.
+          </p>
+        </div>
+
+        <div
+          class="flex bg-white shadow-md rounded-lg w-[1000px] h-[500px] p-10 gap-10"
+        >
+          <div
+            class="w-[35%] bg-gray-900 text-white rounded-md p-8 flex flex-col justify-center"
+          >
+            <h2 class="text-xl font-semibold mb-3">Contact Information</h2>
+            <p class="text-gray-300 text-sm mb-8">
+              Fill up the form and our Team will get back to you within 24
+              hours.
+            </p>
+
+            <ul class="space-y-5 text-sm">
+              <li class="flex items-center gap-3">
+                <span>+1 (424) 535 3523</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span>hello@mail.com</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span>Open Support Ticket</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="w-[65%] flex flex-col justify-between">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <label class="text-sm text-gray-600 block mb-1"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="eg. Lucas"
+                  class="w-full border-b border-gray-300 focus:border-gray-600 outline-none py-2 text-gray-800 placeholder-gray-400"
+                />
+              </div>
+              <div>
+                <label class="text-sm text-gray-600 block mb-1"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="eg. Jones"
+                  class="w-full border-b border-gray-300 focus:border-gray-600 outline-none py-2 text-gray-800 placeholder-gray-400"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-600 block mb-1">Email</label>
+              <input
+                type="email"
+                placeholder="eg. lucas@mail.com"
+                class="w-full border-b border-gray-300 focus:border-gray-600 outline-none py-2 text-gray-800 placeholder-gray-400"
+              />
+            </div>
+
+            <div>
+              <p class="text-sm text-gray-600 mb-2">
+                What are you interested on?
+              </p>
+              <div class="flex items-center gap-6 text-sm text-gray-700">
+                <label class="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="interest"
+                    class="accent-gray-800"
+                    checked
+                  />
+                  Design
+                </label>
+                <label class="flex items-center gap-2">
+                  <input type="radio" name="interest" class="accent-gray-800" />
+                  Development
+                </label>
+                <label class="flex items-center gap-2">
+                  <input type="radio" name="interest" class="accent-gray-800" />
+                  Support
+                </label>
+                <label class="flex items-center gap-2">
+                  <input type="radio" name="interest" class="accent-gray-800" />
+                  Other
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-600 block mb-1"
+                >Your Message</label
+              >
+              <textarea
+                rows="3"
+                placeholder="Write your message..."
+                class="w-full border-b border-gray-300 focus:border-gray-600 outline-none py-2 text-gray-800 placeholder-gray-400 resize-none"
+              ></textarea>
+            </div>
+
+            <div class="flex justify-end">
+              <button
+                type="submit"
+                class="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition duration-300 text-sm font-medium hover:bg-white hover:text-black hover:cursor-pointer transition-all duration-300 ease-in-out border-black border-2"
+              >
+                SEND MESSAGE
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </div>
